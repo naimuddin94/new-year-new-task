@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Work Sans;
+}
+
+/* shared style start */
+.btn-primary {
+  background-color: #fff;
+  color: #005fac;
+  padding: 10px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+/* shared style end */
+
+/* header style start */
+header {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  padding: 150px 100px;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/banner/banner3.png");
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.hero {
+  color: white;
+  width: 525px;
+  text-align: end;
+}
+
+.hero-title {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.hero-description {
+  text-align: right;
+  padding: 20px 0px;
+}
+
+/* header style end */
+
+/* fisrt section style start */
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  margin: 0px 150px;
+  color: #151414;
+}
+
+.content-section {
+  width: 400px;
+  margin-top: 50px;
+}
+
+.content-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.content-section p {
+  padding: 15px 0px;
+}
+
+.content-section ul li {
+  list-style: none;
+  padding: 5px 0px;
+}
+/* fisrt section style end */
+
+/* plan style start */
+.plan{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 160px;
+    padding: 40px 0px;
+}
+
+.plan-heading{
+    text-align: center;
+}
+/* plan style end */
+
+/* watch img section start */
+.watch{
+    position: relative;
+    height: 200px;
+    margin: 50px 160px;
+    background-image: url('../images/gradient1.png');
+    border-radius: 10px;
+}
+
+.watch::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/watch.png");
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-blend-mode: multiply;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+
+.watch-content{
+    padding:50px;
+}
+
+.watch-text{
+    color: #fff;
+    padding-bottom: 10px;
+}
+/* watch img section end */
