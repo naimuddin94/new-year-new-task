@@ -19,38 +19,41 @@
 /* shared style end */
 
 /* header style start */
-header {
+.hero {
   width: 100vw;
   height: fit-content;
   position: relative;
   display: flex;
   justify-content: end;
-  padding: 150px 100px;
+  padding: 200px 80px;
+  color: white;
+  text-align: end;
 }
 
-header::after {
+.hero::after {
   content: "";
   position: absolute;
   background-image: url("../images/banner/banner3.png");
   inset: 0;
   z-index: -1;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.hero {
-  color: white;
-  width: 525px;
-  text-align: end;
+.hero-content{
+  width: 550px;
+  align-items: end;
 }
 
 .hero-title {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 700;
 }
 
 .hero-description {
   text-align: right;
-  padding: 20px 0px;
+  padding: 20px 0px 20px 50px;
+  color: rgb(246, 246, 246);
 }
 
 /* header style end */
@@ -130,3 +133,11 @@ header::after {
     padding-bottom: 10px;
 }
 /* watch img section end */
+
+/* footer style start */
+footer {
+  width: 100vw;
+  height: 400px;
+  background-color: #151414;
+}
+/* footer style end */
